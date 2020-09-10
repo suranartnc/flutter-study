@@ -2,17 +2,17 @@ import 'package:flutter/material.dart';
 import './quiz.dart';
 import './result.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(quizApp());
 
-class MyApp extends StatefulWidget {
+class quizApp extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
     // TODO: implement createState
-    return _MyAppState();
+    return _quizAppState();
   }
 }
 
-class _MyAppState extends State<MyApp> {
+class _quizAppState extends State<quizApp> {
   final _questions = const [
     {
       'questionText': 'What\'s your favorite color?',
