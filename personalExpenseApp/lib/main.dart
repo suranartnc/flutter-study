@@ -15,11 +15,21 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(title: Text('Flutter App')),
         body: Column(
+          // Column's width = Children' width
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            Card(
-              child: Text('CHART!'),
+            Container(
+              width: double.infinity,
+              child: Card(
+                // Card's width = Parent's width
+                color: Colors.blue,
+                child: Container(child: Text('CHART!')),
+                elevation: 5,
+              ),
             ),
             Card(
+              color: Colors.red,
               child: Text('LIST OF TX'),
             )
           ],
